@@ -1,17 +1,17 @@
-# Welcome to MkDocs
+---
+hide:
+  - footer
+---
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Welcome to FINC50
 
-## Commands
+[FINC50](/) is a finance course before even your Finance 101.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+*[Finance 101]: "101" represents a basic beginning course.
 
-## Project layout
+Objectives of this site are:
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- to introduce modern finance topics covered in undergraduate and postgraduate courses
+- to experiment interactive web-based technologies in learning and teaching  
+
+---

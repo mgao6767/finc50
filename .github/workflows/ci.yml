@@ -25,6 +25,7 @@ jobs:
       # Only used for built-in optimization
       # - run: apt-get install pngquant 
       - run: pip install git+https://${GH_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: mkdocs gh-deploy --force
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
