@@ -71,7 +71,7 @@ extra:
       link: / 
       lang: en
     - name: 中文
-      link: /zh/
+      link: /finc50/zh/
       lang: zh
   social:
     - icon: fontawesome/brands/github
