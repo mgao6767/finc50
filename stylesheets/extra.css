@@ -5,3 +5,7 @@
 
   --md-accent-fg-color: #d6001c;
 }
+
+strong {
+  color: var(--md-primary-fg-color);
+}
