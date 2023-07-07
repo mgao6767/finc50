@@ -68,7 +68,7 @@ extra:
   generator: false
   alternate:
     - name: English
-      link: / 
+      link: /finc50/
       lang: en
     - name: 中文
       link: /finc50/zh/

@@ -6,7 +6,7 @@ hide:
 
 # 欢迎来到FINC50
 
-[FINC50](/) is a finance course before even your Finance 101. (1)
+**FINC50** is a finance course before even your Finance 101. (1)
 { .annotate }
 
 1. 🙋‍♂️ 50 is a half of 101, rounded down.
