@@ -100,5 +100,10 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Corporate Finance: 
-      - corporate-finance/index.md
+  - Courses:
+    - Corporate Finance: 
+        - corporate-finance/index.md
+  - 中文:
+    - zh/index.md
+    - 公司金融:
+        - zh/corporate-finance/index.md
