@@ -26,6 +26,9 @@ plugins:
   - git-revision-date-localized:
       type: date
       enable_creation_date: true
+  - git-committers:
+      repository: mgao6767/finc50
+      branch: main
 
 theme:
   name: material
@@ -34,12 +37,14 @@ theme:
     # Palette toggle for light mode
     - scheme: default
       primary: custom
+      accent: custom
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
       primary: custom
+      accent: custom
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
@@ -51,17 +56,22 @@ theme:
     - search.share
     - content.action.edit
     - content.action.view
+    - toc.follow 
     - navigation.prune 
+    - navigation.tabs
+    - navigation.path
+    - navigation.indexes 
+    - navigation.top
 
 extra:  
   generator: false
-#   alternate:
-#     - name: English
-#       link: / 
-#       lang: en
-#     - name: 中文
-#       link: /zh/
-#       lang: zh
+  alternate:
+    - name: English
+      link: / 
+      lang: en
+    - name: 中文
+      link: /zh/
+      lang: zh
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/mgao6767/finc50
@@ -88,4 +98,6 @@ markdown_extensions:
           format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
 
 nav:
-  - Welcome: index.md
+  - Home: index.md
+  - Corporate Finance: 
+      - corporate-finance/index.md
