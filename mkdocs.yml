@@ -92,6 +92,9 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.superfences:
       custom_fences:
         - name: vegalite
@@ -101,9 +104,19 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Courses:
+    - courses/index.md
+    - Principle of Finance:
+        - courses/principle-of-finance/index.md
+        - Introduction: courses/principle-of-finance/introduction.md
+        - Time Value of Money: courses/principle-of-finance/time-value-of-money.md
+        - Risk and Return: courses/principle-of-finance/risk-and-return.md
+        - Valuation of Financial Assets: courses/principle-of-finance/valuation-of-financial-assets.md
+        - Financial Decision Making: courses/principle-of-finance/financial-decision-making.md
     - Corporate Finance: 
-        - corporate-finance/index.md
+        - courses/corporate-finance/index.md
   - 中文:
     - zh/index.md
-    - 公司金融:
-        - zh/corporate-finance/index.md
+    - 课程:
+        - zh/courses/index.md
+        - 公司金融:
+            - zh/courses/corporate-finance/index.md

@@ -19,7 +19,7 @@ FINC50 is a comprehensive website designed to provide an interactive learning ex
 
 ## Features and Benefits
 
-- **Comprehensive Coverage:** FINC50 covers a wide range of modern finance topics, including [corporate finance](./corporate-finance), investment analysis, risk management, financial markets, and more. Our content aligns with the curriculum of undergraduate and postgraduate finance courses.
+- **Comprehensive Coverage:** FINC50 covers a wide range of modern finance topics, including [corporate finance](./courses/corporate-finance), investment analysis, risk management, financial markets, and more. Our content aligns with the curriculum of undergraduate and postgraduate finance courses.
 
 - **Interactive Learning:** We believe that active learning is essential for better comprehension and retention. That's why our website integrates interactive elements, such as simulations, quizzes, and visualizations, to make learning finance engaging and enjoyable.
 
@@ -34,5 +34,7 @@ FINC50 is a comprehensive website designed to provide an interactive learning ex
 We invite you to explore the various sections of FINC50 and dive into the world of modern finance. Whether you are a student, an educator, or a finance enthusiast, our platform offers valuable resources to enhance your learning and teaching experience.
 
 Thank you for joining us on this exciting journey of finance education and interactive learning!
+
+[Check out courses :material-bookshelf:](./courses){ .md-button .md-button--primary }
 
 ---
