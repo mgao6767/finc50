@@ -10,7 +10,8 @@ strong {
   color: var(--md-primary-fg-color);
 }
 
-article p a {
+article p a :not(md-button),
+article li a {
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-underline-offset: 5px;
