@@ -19,15 +19,78 @@ FINC50 is a comprehensive website designed to provide an interactive learning ex
 
 ## Features and Benefits
 
-- **Comprehensive Coverage:** FINC50 covers a wide range of modern finance topics, including [corporate finance](./courses/corporate-finance), investment analysis, risk management, financial markets, and more. Our content aligns with the curriculum of undergraduate and postgraduate finance courses.
+<div class="grid cards" markdown>
 
-- **Interactive Learning:** We believe that active learning is essential for better comprehension and retention. That's why our website integrates interactive elements, such as simulations, quizzes, and visualizations, to make learning finance engaging and enjoyable.
+-   :material-file-edit-outline:{ .lg .middle } **Supplement to Traditional Courses**
 
-- **Experimentation with Web-Based Technologies:** We are committed to staying at the forefront of educational innovation. FINC50 provides an experimental platform for testing and showcasing the potential of web-based technologies in the field of finance education. We strive to leverage the power of interactivity, real-time data, and collaborative features to enhance the learning and teaching experience.
+    ---
 
-- **Access Anytime, Anywhere:** FINC50 is a web-based platform, accessible on various devices. Whether you prefer learning on your laptop, tablet, or smartphone, you can access our resources and tools at your convenience.
+    FINC50 serves as a complement to traditional finance courses by offering supplementary materials, practical examples, and additional practice exercises.
 
-- **Supplement to Traditional Courses:** FINC50 serves as a complement to traditional finance courses by offering supplementary materials, practical examples, and additional practice exercises. Students can reinforce their understanding of key concepts and explore real-world applications of finance theory.
+    [:octicons-arrow-right-24: Get started](./courses)
+
+-   :material-scale-balance:{ .lg .middle } **Open Source, MIT**
+
+    ---
+
+    FINC50 is licensed under MIT and available on [GitHub](https://github.com/mgao6767/finc50).
+
+    [:octicons-arrow-right-24: License](https://github.com/mgao6767/finc50/blob/main/LICENSE)
+
+-   :material-chart-line:{ .lg .middle } **Interactive Learning**
+
+    ---
+
+    FINC50 embraces interactivity for more enjoyable learning.
+
+    ```vegalite
+    {%
+       include "./vega/sp500_stock_return_volatility.json"
+    %}
+    ```
+
+    For example, a graph showing volatility and return of S&P500 constituents in 2022.(1)
+    Try to pan, zoom, select and click.
+    { .annotate }
+    
+    1. The data is retrieved using the following Python code.
+       ```python
+       import yfinance as yf
+       import pandas as pd
+       import numpy as np
+
+       link = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies#S&P_500_component_stocks"
+
+       df = pd.read_html(link, header=0)[0]
+       df = yf.download(tickers=df['Symbol'].tolist(), start="2022-01-01", end="2022-12-31", progress=False, rounding=True)
+       df = df[['Adj Close']]
+       df.columns = df.columns.droplevel(0)
+       ret = ((df.pct_change()+1).cumprod()-1).iloc[-1]
+       std = df.pct_change().std() * np.sqrt(252)
+       df = pd.DataFrame({'return': ret.values, "std": std.values, "ticker": ret.index})
+       df.to_json("./sp500_stock_return_volatility.json", orient="records")
+       ```
+
+    [:octicons-arrow-right-24: Read more](./courses/principle-of-finance/risk-and-return)
+
+-   :material-notebook-outline:{ .lg .middle } **Comprehensive Coverage**
+
+    ---
+
+    FINC50 covers a wide range of modern finance topics, including
+    
+    - [principle of finance](./courses/principle-of-finance),
+    - [corporate finance](./courses/corporate-finance),
+    - investment analysis,
+    - risk management,
+    - financial markets,
+    - and more.
+    
+    Our content aligns with the curriculum of undergraduate and postgraduate finance courses.
+
+    [:octicons-arrow-right-24: Check out courses](./courses)
+
+</div>
 
 ## Get Started
 
