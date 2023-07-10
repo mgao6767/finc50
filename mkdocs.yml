@@ -50,8 +50,11 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
+  icon:
+    admonition:
+      example: octicons/log-24
   features:
-    - announce.dismiss
+    # - announce.dismiss
     - navigation.footer
     - search.suggest
     - search.highlight
@@ -101,6 +104,11 @@ markdown_extensions:
         - name: vegalite
           class: vegalite
           format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
 
 nav:
   - Home: index.md
